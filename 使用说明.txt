@@ -1,0 +1,14 @@
+GameAvatarSwap — 游戏头像替换工具（本地实验）
+
+怎么用：
+  1. 构建      .\src\build.ps1
+  2. 生成图片  python tools\prep_img.py --src 你的头像.jpg [--mask 原版照片.png]
+  3. 放置文件  AvatarHook.dll + hook_config.txt + custom_*.png 放同一目录
+  4. 加载      启动器插件方式 或 .\build\loader.exe AvatarHook.dll 目标进程.exe
+  5. 验证      游戏内拍照一次，看照片是否变成自定义图片
+
+换图：
+  重新跑 prep_img.py 生成图片，2 秒内自动热重载，无需重启游戏。
+
+注意：
+  仅供个人学习研究，使用前请确认不违反游戏用户协议与运营规则。

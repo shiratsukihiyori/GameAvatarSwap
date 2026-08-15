@@ -1,0 +1,11 @@
+[General]
+Name = 头像替换
+Description = 拍照时把头像照片替换为自定义图片（D3D11 Map Hook）
+File = AvatarHook.dll
+Developer = 白月 日和
+Version = 1.0.0
+
+[Enable]
+Name = 启用
+Type = bool
+Value = 1

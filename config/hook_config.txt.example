@@ -1,0 +1,31 @@
+# ============ GameAvatarSwap 配置 ============
+# 配置文件放在 DLL 同目录，2 秒热重载（改完不用重启）
+# 图片路径可写绝对路径；相对路径基于 DLL 所在目录
+
+# FLIP=1 时图片上下翻转（用于照片坐标补偿）
+FLIP=0
+
+# 总开关（保留兼容项，实际生效由下方 REPLACE_* 决定）
+REPLACE=0
+
+# 各尺寸替换开关
+REPLACE_512=1
+REPLACE_256=1
+REPLACE_128=1
+
+# 日志：COPYLOG=1 记录复制/替换事件；FULLLOG=1 记录完整渲染事件
+COPYLOG=1
+FULLLOG=0
+
+# 高级注入开关（通常保持 CSINJECT=1 即可）
+RTINJECT=0
+SRVINJECT=0
+CSINJECT=1
+
+# 自定义图片（分别对应 512/256/128 三种拍照尺寸）
+512=custom_512.png
+256=custom_256.png
+128=custom_128.png
+
+# 可选：仅对指定进程名生效（留空 = 不限制）
+TARGET=

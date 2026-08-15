@@ -1,0 +1,19 @@
+# 构建产物
+build/
+*.dll
+*.exe
+*.o
+*.a
+
+# 运行产物
+*.log
+*.raw
+*.watcherbak
+
+# 本地图片与缓存
+custom_*.png
+__pycache__/
+
+# 编辑器
+.vscode/
+.idea/
